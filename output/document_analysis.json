@@ -1,0 +1,1502 @@
+{
+  "document_info": {
+    "chunk_count": 39,
+    "cluster_count": 37,
+    "hierarchical_chunk_count": 37,
+    "semantic_relationship_count": 4
+  },
+  "atomic_chunks": [
+    {
+      "id": 0,
+      "text": "This report provides a detailed examination of contemporary research areas in contact\nmechanics, emphasizing current methodologies, specific problem domains, and outstanding\nchallenges. Rather than retracing historical developments, we focus on the present state of the\ndiscipline and its multifaceted research directions.",
+      "cluster": 0,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 0,
+        "end_position": 322,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 1,
+      "text": "Normal contact mechanics examines the deformation behavior of solids touching at one or more\npoints, with particular emphasis on stresses acting perpendicular to the contacting surfaces. This foundational area focuses on normal stresses resulting from applied forces and adhesion\npresent between surfaces in close contact, even when clean and dry.",
+      "cluster": 1,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 323,
+        "end_position": 670,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 2,
+      "text": "Research in normal contact mechanics currently focuses on understanding surface interactions\nacross multiple scales. While Hertzian theory provides the classical foundation for idealized\ngeometries (convex spherical balls articulating against concave spherical sockets), current\ninvestigations acknowledge its limitations when dealing with real-world complexities.",
+      "cluster": 2,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 671,
+        "end_position": 1035,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 3,
+      "text": "The field of frictional contact mechanics, which examines tangential forces between contacting\nbodies, has evolved considerably beyond simple Coulomb friction laws. Current research\nemphasizes the coupling between normal and tangential forces, particularly in applications\ninvolving micro- and nanotechnology. A quintessential example in normal contact mechanics involves ball-and-socket joints.",
+      "cluster": 3,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 1036,
+        "end_position": 1431,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 4,
+      "text": "When\napplied force is F, diameter is D, elastic modulus is E, and Poisson's ratio is \u03bd , the interface's\ncontact area A forms a circular or cup shape. This relationship demonstrates that contact area\nincreases with larger forces, softer materials, or better congruity between surfaces.",
+      "cluster": 4,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 1432,
+        "end_position": 1717,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 5,
+      "text": "Such\nprinciples apply to mechanical engineering problems like locomotive wheel-rail contact, coupling\ndevices, and bearings. In the domain of frictional contact, tangentially loaded contacts up to the initiation of sliding\nrepresent a significant research focus.",
+      "cluster": 5,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 1718,
+        "end_position": 1980,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 6,
+      "text": "These problems emerge in braking systems, mechanical\nlinkages, and gasket seals where both normal pressure and shear stresses determine the\ncontact behavior.",
+      "cluster": 6,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 1981,
+        "end_position": 2138,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 7,
+      "text": "Current Frontiers in Contact Mechanics: A\nComprehensive Analysis\nNormal and Frictional Contact Mechanics\n\u00001\u0000\nCurrent Research Directions\n\u00002\u0000\n\u00001\u0000\nExample Problems\n\u00002\u0000\n\u00001\u0000\n\u00001\u0000\u00003\u0000\nThe simplest available methods are preferred for solving contact problems, with the method of\ndimensionality reduction \u0000MDR) being particularly popular.",
+      "cluster": 7,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 2139,
+        "end_position": 2468,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 8,
+      "text": "For more complex scenarios,\napproaches often utilize the solution of the non-adhesive normal contact problem as a\nfoundation for solving more complex contact scenarios. A significant challenge in this area remains the accurate modeling of adhesion effects,\nparticularly at micro- and nano-scales where surface forces become increasingly dominant.",
+      "cluster": 8,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 2469,
+        "end_position": 2815,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 9,
+      "text": "The\ninterplay between adhesion and friction, especially in the presence of surface roughness,\ncontinues to pose theoretical and computational challenges. Elastic-plastic contact mechanics addresses scenarios where materials undergo both elastic and\nplastic deformation simultaneously\u2014a common occurrence in metallic contacts where stresses\nfrequently exceed yield limits.",
+      "cluster": 9,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 2816,
+        "end_position": 3187,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 10,
+      "text": "Recent work in this area includes research into the inception of yielding in spherical shells and\nlayered elastic-plastic spherical contacts.",
+      "cluster": 10,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 3188,
+        "end_position": 3329,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 11,
+      "text": "A key finding contradicts conventional wisdom: the\naverage pressure during heavily loaded elastic-plastic contact is not governed by the traditional\nhardness-to-yield strength ratio of approximately three but varies according to boundary\nconditions and deformed geometry.",
+      "cluster": 11,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 3330,
+        "end_position": 3601,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 12,
+      "text": "Several geometric configurations receive particular attention in elastic-plastic contact research:\nThese geometries serve as idealized models for real-world applications like bearings, machine\ninterfaces, mechanical seals, and gears where elastic-plastic deformation dominates contact\nbehavior. The elastic-plastic regime presents unique challenges since closed-form solutions derived from\nfundamental principles are generally unavailable.",
+      "cluster": 12,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 3602,
+        "end_position": 4041,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 13,
+      "text": "Researchers typically divide contact problems\ninto three phases: elastic (following Hertz theory), elastic-plastic (using various semi-analytical\nmodels), and fully plastic (following Johnson's theory).",
+      "cluster": 13,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 4042,
+        "end_position": 4244,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 14,
+      "text": "For spherical contact specifically, several models exist:Methodologies \u00004\u0000 Open Questions \u00001\u0000 Elastic-Plastic Contact Mechanics \u00003\u0000 Current Research Directions \u00003\u0000 Example Problems Spherical contact, with distinctions between flattening and indentation contacts Cylindrical contact mechanics Sinusoidal or wavy contact interfaces Axisymmetric sinusoidal configurations\u00003\u0000 Methodologies \u00003\u0000 Significant research opportunities exist in understanding hardening",
+      "cluster": 14,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 4245,
+        "end_position": 4702,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 15,
+      "text": "and other failure mechanisms, such as fracture, as well as the influence of adhesion on elastic-plastic contact.",
+      "cluster": 15,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 4703,
+        "end_position": 4815,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 16,
+      "text": "Size effects in contact mechanics\u2014where material properties effectively change depending on\ncontact size\u2014represent another frontier requiring further investigation. Joint contact mechanics addresses the complex interactions in biological joints, with particular\nrelevance to biomechanics and biomedical engineering applications.",
+      "cluster": 16,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 4816,
+        "end_position": 5144,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 17,
+      "text": "Current research in joint contact mechanics extends beyond simplified Hertzian analyses to\naccount for the complex geometries, material properties, and loads characteristic of real-life\njoints. Experimentation remains the \"gold standard\" despite sophisticated analytical and finite\nelement models requiring experimental verification.",
+      "cluster": 17,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 5145,
+        "end_position": 5478,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 18,
+      "text": "A representative example involves the analysis of ball-and-socket joints like shoulders or hips. Understanding how contact area increases with body weight, activity intensity, material\nsoftness, or improved congruity between joint surfaces is crucial for designing joint\nreplacements and understanding joint pathologies.",
+      "cluster": 18,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 5479,
+        "end_position": 5799,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 19,
+      "text": "Experimental techniques for investigating joint contact mechanics fall into three categories:\nThe most widely used in vitro method involves inserting thin pressure-sensitive film (e.g., Fujifilm\nor Tekscan) into the joint space.",
+      "cluster": 19,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 5800,
+        "end_position": 6028,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 20,
+      "text": "For in vivo studies, video recording of 3D limb motion combined with inverse dynamic analysis of a 3D link-segment model computes joint contact force during prescribed activities.\u0000\u0000\u0000Jackson-Green Model \u0000JGM\u0000, which assumes pressure ratio decreases as contact radius approaches the effective sphere radius \u0000\u0000\u0000Olsson and Larsson's model, which aligns with unadjusted",
+      "cluster": 20,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 6029,
+        "end_position": 6393,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 21,
+      "text": "finite element method \u0000FEM) results\u00003\u0000 Open Questions \u00003\u0000 Joint Contact Mechanics Current Research Directions \u00002\u0000 Example Problems \u00002\u0000 Methodologies \u0000\u0000\u0000Mechanochemical methods: Using thin films or chemical substances that physically deform inside or around the joint proportionally to mechanical load \u0000\u0000\u0000Electronic sensor methods: Employing transducers whose electrical properties change in proportion",
+      "cluster": 21,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 6394,
+        "end_position": 6795,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 22,
+      "text": "to mechanical load \u0000\u0000\u0000Noninvasive methods: Approaches avoiding device insertion into joints, thereby maintaining natural articulation\u00002\u0000 \u00002\u0000 A persistent challenge in joint contact mechanics is developing methodologies that avoid disrupting natural joint articulation.",
+      "cluster": 22,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 6796,
+        "end_position": 7064,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 23,
+      "text": "Current in vitro techniques using pressure-sensitive films\ndisturb normal joint function, while standard in vivo methods cannot generate joint contact area\nor stress distribution data. Developing techniques that preserve natural biomechanics while\nproviding comprehensive contact information remains an open problem.",
+      "cluster": 23,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 7065,
+        "end_position": 7381,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 24,
+      "text": "Surface roughness significantly impacts contact behavior, as real contact occurs only at discrete\nasperity tips, making the actual contact area a small fraction of the nominal area. Contact mechanics between rough surfaces represents a highly active research area in physics\nand engineering.",
+      "cluster": 24,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 7382,
+        "end_position": 7673,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 25,
+      "text": "Current investigations focus on understanding how multiscale roughness\nfeatures affect contact behavior, with particular attention to computational efficiency in modeling\nthese complex interfaces.",
+      "cluster": 25,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 7674,
+        "end_position": 7870,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 26,
+      "text": "Rough surface contact problems include:\nTwo principal computational approaches dominate rough surface contact analysis:\nImplementation strategies vary in computational efficiency, with ongoing research focused on\naccurately discretizing multiscale roughness features while maintaining tractable computation\ntimes. Key challenges include developing methods that accurately capture multiscale roughness\nfeatures while remaining computationally efficient.",
+      "cluster": 26,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 7871,
+        "end_position": 8323,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 27,
+      "text": "The interplay between roughness and other phenomena\u2014such as adhesion, friction, and elastic-plastic deformation\u2014presents further complexity requiring integrated analytical and computational approaches.Open Questions \u00002\u0000 Contact Mechanics with Roughness Current Research Directions \u00005\u0000 Example Problems Contact between nominally flat but microscopically rough surfaces Multi-scale contact problems where roughness exists at various length",
+      "cluster": 27,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 8324,
+        "end_position": 8761,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 28,
+      "text": "scales Frictional contact with roughness, where asperity interactions determine overall frictional behavior\u00005\u0000 Methodologies \u0000\u0000\u0000Boundary Element Method \u0000BEM\u0000: Efficiently handles linear elastic problems but presents limitations for nonlinear materials \u0000\u0000\u0000Finite Element Method \u0000FEM\u0000: Provides versatility for complex geometries and nonlinear material behavior but demands significant computational resources\u00005\u0000 \u00005\u0000 Open Questions \u00005\u0000",
+      "cluster": 28,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 8762,
+        "end_position": 9195,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 29,
+      "text": "The computational landscape for contact mechanics spans multiple techniques, each with distinct advantages for specific problem domains.",
+      "cluster": 29,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 9196,
+        "end_position": 9332,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 30,
+      "text": "The Boundary Element Method \u0000BEM) provides a mathematically elegant approach for linear\nelastic contact problems. Its computational efficiency derives from discretizing only the\nboundaries rather than the entire domain, making it particularly suited for semi-infinite bodies\ntypical in contact problems. Current implementations offer various algorithmic strategies with differing computational\nefficiencies.",
+      "cluster": 30,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 9333,
+        "end_position": 9740,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 31,
+      "text": "The technique excels for problems involving linear elasticity but faces limitations\nwhen addressing nonlinear material behavior or complex geometries. The Finite Element Method \u0000FEM) offers versatility for complex geometries and nonlinear material\nbehavior encountered in advanced contact problems.",
+      "cluster": 28,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 9741,
+        "end_position": 10039,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 32,
+      "text": "Recent developments in FEM for contact\nmechanics focus on accurately discretizing multiscale roughness features while managing\ncomputational demands. Strategies for handling the contact interface include:\nEmerging computational strategies combine aspects of multiple methods to leverage their\nrespective strengths.",
+      "cluster": 26,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 10040,
+        "end_position": 10354,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 33,
+      "text": "For example, coupling BEM's efficiency for linear elastic domains with\nFEM's flexibility for nonlinear regions offers promising avenues for complex contact problems. Advanced numerical techniques like multigrid methods and adaptive mesh refinement help\naddress the multiscale nature of contact problems, particularly those involving surface\nroughness across different length scales.",
+      "cluster": 31,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 10355,
+        "end_position": 10737,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 34,
+      "text": "Computational contact mechanics faces several persistent challenges:Computational Methods in Contact Mechanics Boundary Element Method \u00005\u0000 \u00005\u0000 Finite Element Method \u00005\u0000 \u0000\u0000\u0000Node-to-node discretization \u0000\u0000\u0000Node-to-segment approaches \u0000\u0000\u0000Segment-to-segment formulations\u00005\u0000 Hybrid and Advanced Approaches \u00005\u0000 \u00005\u0000 Current Challenges \u0000\u0000\u0000Balancing accuracy and computational efficiency, especially for problems involving roughness across multiple scales \u0000\u0000\u0000Developing robust convergence",
+      "cluster": 32,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 10738,
+        "end_position": 11215,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 35,
+      "text": "strategies for nonlinear contact problems \u0000\u0000\u0000Integrating multiphysics phenomena (thermal effects, fluid interactions) with mechanical contact Contact mechanics continues to evolve as a multifaceted discipline addressing fundamental physical interactions across scales and applications.",
+      "cluster": 33,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 11216,
+        "end_position": 11501,
+        "is_complete_paragraph": false,
+        "is_partial_sentence": true
+      }
+    },
+    {
+      "id": 36,
+      "text": "While significant advances have been\nmade in analytical and computational methods, numerous challenges persist, particularly in\nelastic-plastic regimes, multiscale roughness modeling, and experimental techniques for\nbiological joints. Future research directions will likely emphasize integrated approaches that combine\nexperimental, analytical, and computational methods to address increasingly complex contact\nscenarios.",
+      "cluster": 34,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 11502,
+        "end_position": 11923,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 37,
+      "text": "Particular attention to multiscale phenomena\u2014from nanoscale adhesion to macroscale\ndeformation\u2014will continue driving innovation in this field. Additionally, the development of more\nefficient computational methods capable of handling realistic surface geometries without\nprohibitive computational costs remains an active and necessary research direction.",
+      "cluster": 35,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 11924,
+        "end_position": 12277,
+        "is_complete_paragraph": false
+      }
+    },
+    {
+      "id": 38,
+      "text": "\u2042\u0000\u0000\u0000Creating efficient parallel implementation strategies for large-scale problems\u00005\u0000\nConclusion\n\u0000\u0000\u0000https://en.wikipedia.org/wiki/Contact_mechanics\n\u0000\u0000\u0000https://pmc.ncbi.nlm.nih.gov/articles/PMC10541306/\n\u0000\u0000\u0000https://www.eng.auburn.edu/~jacksr7/AReviewofElasticPlasticContactMechanics2017.pdf\n\u0000\u0000\u0000https://library.oapen.org/handle/20.500.12657/23291\n\u0000\u0000\u0000http://cse.lab.imtlucca.it/~bemporad/publications/papers/CISM-roughness.pdf",
+      "cluster": 36,
+      "metadata": {
+        "paragraph_idx": 0,
+        "start_position": 12278,
+        "end_position": 12700,
+        "is_complete_paragraph": false
+      }
+    }
+  ],
+  "hierarchical_chunks": [
+    {
+      "id": 0,
+      "text": "This report provides a detailed examination of contemporary research areas in contact\nmechanics, emphasizing current methodologies, specific problem domains, and outstanding\nchallenges. Rather than retracing historical developments, we focus on the present state of the\ndiscipline and its multifaceted research directions.",
+      "source_indices": [
+        0
+      ],
+      "metadata": {
+        "cluster_id": 0,
+        "chunk_count": 1,
+        "source_indices": [
+          0
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 0,
+            "end_position": 322,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 1,
+      "text": "Normal contact mechanics examines the deformation behavior of solids touching at one or more\npoints, with particular emphasis on stresses acting perpendicular to the contacting surfaces. This foundational area focuses on normal stresses resulting from applied forces and adhesion\npresent between surfaces in close contact, even when clean and dry.",
+      "source_indices": [
+        1
+      ],
+      "metadata": {
+        "cluster_id": 1,
+        "chunk_count": 1,
+        "source_indices": [
+          1
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 323,
+            "end_position": 670,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 2,
+      "text": "Research in normal contact mechanics currently focuses on understanding surface interactions\nacross multiple scales. While Hertzian theory provides the classical foundation for idealized\ngeometries (convex spherical balls articulating against concave spherical sockets), current\ninvestigations acknowledge its limitations when dealing with real-world complexities.",
+      "source_indices": [
+        2
+      ],
+      "metadata": {
+        "cluster_id": 2,
+        "chunk_count": 1,
+        "source_indices": [
+          2
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 671,
+            "end_position": 1035,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 3,
+      "text": "The field of frictional contact mechanics, which examines tangential forces between contacting\nbodies, has evolved considerably beyond simple Coulomb friction laws. Current research\nemphasizes the coupling between normal and tangential forces, particularly in applications\ninvolving micro- and nanotechnology. A quintessential example in normal contact mechanics involves ball-and-socket joints.",
+      "source_indices": [
+        3
+      ],
+      "metadata": {
+        "cluster_id": 3,
+        "chunk_count": 1,
+        "source_indices": [
+          3
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 1036,
+            "end_position": 1431,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 4,
+      "text": "When\napplied force is F, diameter is D, elastic modulus is E, and Poisson's ratio is \u03bd , the interface's\ncontact area A forms a circular or cup shape. This relationship demonstrates that contact area\nincreases with larger forces, softer materials, or better congruity between surfaces.",
+      "source_indices": [
+        4
+      ],
+      "metadata": {
+        "cluster_id": 4,
+        "chunk_count": 1,
+        "source_indices": [
+          4
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 1432,
+            "end_position": 1717,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 5,
+      "text": "Such\nprinciples apply to mechanical engineering problems like locomotive wheel-rail contact, coupling\ndevices, and bearings. In the domain of frictional contact, tangentially loaded contacts up to the initiation of sliding\nrepresent a significant research focus.",
+      "source_indices": [
+        5
+      ],
+      "metadata": {
+        "cluster_id": 5,
+        "chunk_count": 1,
+        "source_indices": [
+          5
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 1718,
+            "end_position": 1980,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 6,
+      "text": "These problems emerge in braking systems, mechanical\nlinkages, and gasket seals where both normal pressure and shear stresses determine the\ncontact behavior.",
+      "source_indices": [
+        6
+      ],
+      "metadata": {
+        "cluster_id": 6,
+        "chunk_count": 1,
+        "source_indices": [
+          6
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 1981,
+            "end_position": 2138,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 7,
+      "text": "Current Frontiers in Contact Mechanics: A\nComprehensive Analysis\nNormal and Frictional Contact Mechanics\n\u00001\u0000\nCurrent Research Directions\n\u00002\u0000\n\u00001\u0000\nExample Problems\n\u00002\u0000\n\u00001\u0000\n\u00001\u0000\u00003\u0000\nThe simplest available methods are preferred for solving contact problems, with the method of\ndimensionality reduction \u0000MDR) being particularly popular.",
+      "source_indices": [
+        7
+      ],
+      "metadata": {
+        "cluster_id": 7,
+        "chunk_count": 1,
+        "source_indices": [
+          7
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 2139,
+            "end_position": 2468,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 8,
+      "text": "For more complex scenarios,\napproaches often utilize the solution of the non-adhesive normal contact problem as a\nfoundation for solving more complex contact scenarios. A significant challenge in this area remains the accurate modeling of adhesion effects,\nparticularly at micro- and nano-scales where surface forces become increasingly dominant.",
+      "source_indices": [
+        8
+      ],
+      "metadata": {
+        "cluster_id": 8,
+        "chunk_count": 1,
+        "source_indices": [
+          8
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 2469,
+            "end_position": 2815,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 9,
+      "text": "The\ninterplay between adhesion and friction, especially in the presence of surface roughness,\ncontinues to pose theoretical and computational challenges. Elastic-plastic contact mechanics addresses scenarios where materials undergo both elastic and\nplastic deformation simultaneously\u2014a common occurrence in metallic contacts where stresses\nfrequently exceed yield limits.",
+      "source_indices": [
+        9
+      ],
+      "metadata": {
+        "cluster_id": 9,
+        "chunk_count": 1,
+        "source_indices": [
+          9
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 2816,
+            "end_position": 3187,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 10,
+      "text": "Recent work in this area includes research into the inception of yielding in spherical shells and\nlayered elastic-plastic spherical contacts.",
+      "source_indices": [
+        10
+      ],
+      "metadata": {
+        "cluster_id": 10,
+        "chunk_count": 1,
+        "source_indices": [
+          10
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 3188,
+            "end_position": 3329,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 11,
+      "text": "A key finding contradicts conventional wisdom: the\naverage pressure during heavily loaded elastic-plastic contact is not governed by the traditional\nhardness-to-yield strength ratio of approximately three but varies according to boundary\nconditions and deformed geometry.",
+      "source_indices": [
+        11
+      ],
+      "metadata": {
+        "cluster_id": 11,
+        "chunk_count": 1,
+        "source_indices": [
+          11
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 3330,
+            "end_position": 3601,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 12,
+      "text": "Several geometric configurations receive particular attention in elastic-plastic contact research:\nThese geometries serve as idealized models for real-world applications like bearings, machine\ninterfaces, mechanical seals, and gears where elastic-plastic deformation dominates contact\nbehavior. The elastic-plastic regime presents unique challenges since closed-form solutions derived from\nfundamental principles are generally unavailable.",
+      "source_indices": [
+        12
+      ],
+      "metadata": {
+        "cluster_id": 12,
+        "chunk_count": 1,
+        "source_indices": [
+          12
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 3602,
+            "end_position": 4041,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 13,
+      "text": "Researchers typically divide contact problems\ninto three phases: elastic (following Hertz theory), elastic-plastic (using various semi-analytical\nmodels), and fully plastic (following Johnson's theory).",
+      "source_indices": [
+        13
+      ],
+      "metadata": {
+        "cluster_id": 13,
+        "chunk_count": 1,
+        "source_indices": [
+          13
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 4042,
+            "end_position": 4244,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 14,
+      "text": "For spherical contact specifically, several models exist:Methodologies \u00004\u0000 Open Questions \u00001\u0000 Elastic-Plastic Contact Mechanics \u00003\u0000 Current Research Directions \u00003\u0000 Example Problems Spherical contact, with distinctions between flattening and indentation contacts Cylindrical contact mechanics Sinusoidal or wavy contact interfaces Axisymmetric sinusoidal configurations\u00003\u0000 Methodologies \u00003\u0000 Significant research opportunities exist in understanding hardening",
+      "source_indices": [
+        14
+      ],
+      "metadata": {
+        "cluster_id": 14,
+        "chunk_count": 1,
+        "source_indices": [
+          14
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 4245,
+            "end_position": 4702,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 15,
+      "text": "and other failure mechanisms, such as fracture, as well as the influence of adhesion on elastic-plastic contact.",
+      "source_indices": [
+        15
+      ],
+      "metadata": {
+        "cluster_id": 15,
+        "chunk_count": 1,
+        "source_indices": [
+          15
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 4703,
+            "end_position": 4815,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 16,
+      "text": "Size effects in contact mechanics\u2014where material properties effectively change depending on\ncontact size\u2014represent another frontier requiring further investigation. Joint contact mechanics addresses the complex interactions in biological joints, with particular\nrelevance to biomechanics and biomedical engineering applications.",
+      "source_indices": [
+        16
+      ],
+      "metadata": {
+        "cluster_id": 16,
+        "chunk_count": 1,
+        "source_indices": [
+          16
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 4816,
+            "end_position": 5144,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 17,
+      "text": "Current research in joint contact mechanics extends beyond simplified Hertzian analyses to\naccount for the complex geometries, material properties, and loads characteristic of real-life\njoints. Experimentation remains the \"gold standard\" despite sophisticated analytical and finite\nelement models requiring experimental verification.",
+      "source_indices": [
+        17
+      ],
+      "metadata": {
+        "cluster_id": 17,
+        "chunk_count": 1,
+        "source_indices": [
+          17
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 5145,
+            "end_position": 5478,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 18,
+      "text": "A representative example involves the analysis of ball-and-socket joints like shoulders or hips. Understanding how contact area increases with body weight, activity intensity, material\nsoftness, or improved congruity between joint surfaces is crucial for designing joint\nreplacements and understanding joint pathologies.",
+      "source_indices": [
+        18
+      ],
+      "metadata": {
+        "cluster_id": 18,
+        "chunk_count": 1,
+        "source_indices": [
+          18
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 5479,
+            "end_position": 5799,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 19,
+      "text": "Experimental techniques for investigating joint contact mechanics fall into three categories:\nThe most widely used in vitro method involves inserting thin pressure-sensitive film (e.g., Fujifilm\nor Tekscan) into the joint space.",
+      "source_indices": [
+        19
+      ],
+      "metadata": {
+        "cluster_id": 19,
+        "chunk_count": 1,
+        "source_indices": [
+          19
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 5800,
+            "end_position": 6028,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 20,
+      "text": "For in vivo studies, video recording of 3D limb motion combined with inverse dynamic analysis of a 3D link-segment model computes joint contact force during prescribed activities.\u0000\u0000\u0000Jackson-Green Model \u0000JGM\u0000, which assumes pressure ratio decreases as contact radius approaches the effective sphere radius \u0000\u0000\u0000Olsson and Larsson's model, which aligns with unadjusted",
+      "source_indices": [
+        20
+      ],
+      "metadata": {
+        "cluster_id": 20,
+        "chunk_count": 1,
+        "source_indices": [
+          20
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 6029,
+            "end_position": 6393,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 21,
+      "text": "finite element method \u0000FEM) results\u00003\u0000 Open Questions \u00003\u0000 Joint Contact Mechanics Current Research Directions \u00002\u0000 Example Problems \u00002\u0000 Methodologies \u0000\u0000\u0000Mechanochemical methods: Using thin films or chemical substances that physically deform inside or around the joint proportionally to mechanical load \u0000\u0000\u0000Electronic sensor methods: Employing transducers whose electrical properties change in proportion",
+      "source_indices": [
+        21
+      ],
+      "metadata": {
+        "cluster_id": 21,
+        "chunk_count": 1,
+        "source_indices": [
+          21
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 6394,
+            "end_position": 6795,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 22,
+      "text": "to mechanical load \u0000\u0000\u0000Noninvasive methods: Approaches avoiding device insertion into joints, thereby maintaining natural articulation\u00002\u0000 \u00002\u0000 A persistent challenge in joint contact mechanics is developing methodologies that avoid disrupting natural joint articulation.",
+      "source_indices": [
+        22
+      ],
+      "metadata": {
+        "cluster_id": 22,
+        "chunk_count": 1,
+        "source_indices": [
+          22
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 6796,
+            "end_position": 7064,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 23,
+      "text": "Current in vitro techniques using pressure-sensitive films\ndisturb normal joint function, while standard in vivo methods cannot generate joint contact area\nor stress distribution data. Developing techniques that preserve natural biomechanics while\nproviding comprehensive contact information remains an open problem.",
+      "source_indices": [
+        23
+      ],
+      "metadata": {
+        "cluster_id": 23,
+        "chunk_count": 1,
+        "source_indices": [
+          23
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 7065,
+            "end_position": 7381,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 24,
+      "text": "Surface roughness significantly impacts contact behavior, as real contact occurs only at discrete\nasperity tips, making the actual contact area a small fraction of the nominal area. Contact mechanics between rough surfaces represents a highly active research area in physics\nand engineering.",
+      "source_indices": [
+        24
+      ],
+      "metadata": {
+        "cluster_id": 24,
+        "chunk_count": 1,
+        "source_indices": [
+          24
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 7382,
+            "end_position": 7673,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 25,
+      "text": "Current investigations focus on understanding how multiscale roughness\nfeatures affect contact behavior, with particular attention to computational efficiency in modeling\nthese complex interfaces.",
+      "source_indices": [
+        25
+      ],
+      "metadata": {
+        "cluster_id": 25,
+        "chunk_count": 1,
+        "source_indices": [
+          25
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 7674,
+            "end_position": 7870,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 26,
+      "text": "Rough surface contact problems include:\nTwo principal computational approaches dominate rough surface contact analysis:\nImplementation strategies vary in computational efficiency, with ongoing research focused on\naccurately discretizing multiscale roughness features while maintaining tractable computation\ntimes. Key challenges include developing methods that accurately capture multiscale roughness\nfeatures while remaining computationally efficient.\n\nRecent developments in FEM for contact\nmechanics focus on accurately discretizing multiscale roughness features while managing\ncomputational demands. Strategies for handling the contact interface include:\nEmerging computational strategies combine aspects of multiple methods to leverage their\nrespective strengths.",
+      "source_indices": [
+        26,
+        32
+      ],
+      "metadata": {
+        "cluster_id": 26,
+        "chunk_count": 2,
+        "source_indices": [
+          26,
+          32
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 7871,
+            "end_position": 8323,
+            "is_complete_paragraph": false
+          },
+          {
+            "paragraph_idx": 0,
+            "start_position": 10040,
+            "end_position": 10354,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": false,
+        "span_distance": 6
+      }
+    },
+    {
+      "id": 27,
+      "text": "The interplay between roughness and other phenomena\u2014such as adhesion, friction, and elastic-plastic deformation\u2014presents further complexity requiring integrated analytical and computational approaches.Open Questions \u00002\u0000 Contact Mechanics with Roughness Current Research Directions \u00005\u0000 Example Problems Contact between nominally flat but microscopically rough surfaces Multi-scale contact problems where roughness exists at various length",
+      "source_indices": [
+        27
+      ],
+      "metadata": {
+        "cluster_id": 27,
+        "chunk_count": 1,
+        "source_indices": [
+          27
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 8324,
+            "end_position": 8761,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 28,
+      "text": "scales Frictional contact with roughness, where asperity interactions determine overall frictional behavior\u00005\u0000 Methodologies \u0000\u0000\u0000Boundary Element Method \u0000BEM\u0000: Efficiently handles linear elastic problems but presents limitations for nonlinear materials \u0000\u0000\u0000Finite Element Method \u0000FEM\u0000: Provides versatility for complex geometries and nonlinear material behavior but demands significant computational resources\u00005\u0000 \u00005\u0000 Open Questions \u00005\u0000\n\nThe technique excels for problems involving linear elasticity but faces limitations\nwhen addressing nonlinear material behavior or complex geometries. The Finite Element Method \u0000FEM) offers versatility for complex geometries and nonlinear material\nbehavior encountered in advanced contact problems.",
+      "source_indices": [
+        28,
+        31
+      ],
+      "metadata": {
+        "cluster_id": 28,
+        "chunk_count": 2,
+        "source_indices": [
+          28,
+          31
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 8762,
+            "end_position": 9195,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          },
+          {
+            "paragraph_idx": 0,
+            "start_position": 9741,
+            "end_position": 10039,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": false,
+        "span_distance": 3
+      }
+    },
+    {
+      "id": 29,
+      "text": "The computational landscape for contact mechanics spans multiple techniques, each with distinct advantages for specific problem domains.",
+      "source_indices": [
+        29
+      ],
+      "metadata": {
+        "cluster_id": 29,
+        "chunk_count": 1,
+        "source_indices": [
+          29
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 9196,
+            "end_position": 9332,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 30,
+      "text": "The Boundary Element Method \u0000BEM) provides a mathematically elegant approach for linear\nelastic contact problems. Its computational efficiency derives from discretizing only the\nboundaries rather than the entire domain, making it particularly suited for semi-infinite bodies\ntypical in contact problems. Current implementations offer various algorithmic strategies with differing computational\nefficiencies.",
+      "source_indices": [
+        30
+      ],
+      "metadata": {
+        "cluster_id": 30,
+        "chunk_count": 1,
+        "source_indices": [
+          30
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 9333,
+            "end_position": 9740,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 31,
+      "text": "For example, coupling BEM's efficiency for linear elastic domains with\nFEM's flexibility for nonlinear regions offers promising avenues for complex contact problems. Advanced numerical techniques like multigrid methods and adaptive mesh refinement help\naddress the multiscale nature of contact problems, particularly those involving surface\nroughness across different length scales.",
+      "source_indices": [
+        33
+      ],
+      "metadata": {
+        "cluster_id": 31,
+        "chunk_count": 1,
+        "source_indices": [
+          33
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 10355,
+            "end_position": 10737,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 32,
+      "text": "Computational contact mechanics faces several persistent challenges:Computational Methods in Contact Mechanics Boundary Element Method \u00005\u0000 \u00005\u0000 Finite Element Method \u00005\u0000 \u0000\u0000\u0000Node-to-node discretization \u0000\u0000\u0000Node-to-segment approaches \u0000\u0000\u0000Segment-to-segment formulations\u00005\u0000 Hybrid and Advanced Approaches \u00005\u0000 \u00005\u0000 Current Challenges \u0000\u0000\u0000Balancing accuracy and computational efficiency, especially for problems involving roughness across multiple scales \u0000\u0000\u0000Developing robust convergence",
+      "source_indices": [
+        34
+      ],
+      "metadata": {
+        "cluster_id": 32,
+        "chunk_count": 1,
+        "source_indices": [
+          34
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 10738,
+            "end_position": 11215,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 33,
+      "text": "strategies for nonlinear contact problems \u0000\u0000\u0000Integrating multiphysics phenomena (thermal effects, fluid interactions) with mechanical contact Contact mechanics continues to evolve as a multifaceted discipline addressing fundamental physical interactions across scales and applications.",
+      "source_indices": [
+        35
+      ],
+      "metadata": {
+        "cluster_id": 33,
+        "chunk_count": 1,
+        "source_indices": [
+          35
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 11216,
+            "end_position": 11501,
+            "is_complete_paragraph": false,
+            "is_partial_sentence": true
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 34,
+      "text": "While significant advances have been\nmade in analytical and computational methods, numerous challenges persist, particularly in\nelastic-plastic regimes, multiscale roughness modeling, and experimental techniques for\nbiological joints. Future research directions will likely emphasize integrated approaches that combine\nexperimental, analytical, and computational methods to address increasingly complex contact\nscenarios.",
+      "source_indices": [
+        36
+      ],
+      "metadata": {
+        "cluster_id": 34,
+        "chunk_count": 1,
+        "source_indices": [
+          36
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 11502,
+            "end_position": 11923,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 35,
+      "text": "Particular attention to multiscale phenomena\u2014from nanoscale adhesion to macroscale\ndeformation\u2014will continue driving innovation in this field. Additionally, the development of more\nefficient computational methods capable of handling realistic surface geometries without\nprohibitive computational costs remains an active and necessary research direction.",
+      "source_indices": [
+        37
+      ],
+      "metadata": {
+        "cluster_id": 35,
+        "chunk_count": 1,
+        "source_indices": [
+          37
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 11924,
+            "end_position": 12277,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    },
+    {
+      "id": 36,
+      "text": "\u2042\u0000\u0000\u0000Creating efficient parallel implementation strategies for large-scale problems\u00005\u0000\nConclusion\n\u0000\u0000\u0000https://en.wikipedia.org/wiki/Contact_mechanics\n\u0000\u0000\u0000https://pmc.ncbi.nlm.nih.gov/articles/PMC10541306/\n\u0000\u0000\u0000https://www.eng.auburn.edu/~jacksr7/AReviewofElasticPlasticContactMechanics2017.pdf\n\u0000\u0000\u0000https://library.oapen.org/handle/20.500.12657/23291\n\u0000\u0000\u0000http://cse.lab.imtlucca.it/~bemporad/publications/papers/CISM-roughness.pdf",
+      "source_indices": [
+        38
+      ],
+      "metadata": {
+        "cluster_id": 36,
+        "chunk_count": 1,
+        "source_indices": [
+          38
+        ],
+        "source_metadata": [
+          {
+            "paragraph_idx": 0,
+            "start_position": 12278,
+            "end_position": 12700,
+            "is_complete_paragraph": false
+          }
+        ],
+        "paragraph_indices": [
+          0
+        ],
+        "is_contiguous": true,
+        "span_distance": 0
+      }
+    }
+  ],
+  "semantic_relationships": [
+    {
+      "chunk1_id": 28,
+      "chunk2_id": 31,
+      "similarity": 0.5818531702714527,
+      "same_cluster": true
+    },
+    {
+      "chunk1_id": 31,
+      "chunk2_id": 28,
+      "similarity": 0.5818531702714527,
+      "same_cluster": true
+    },
+    {
+      "chunk1_id": 26,
+      "chunk2_id": 32,
+      "similarity": 0.5163892073823746,
+      "same_cluster": true
+    },
+    {
+      "chunk1_id": 32,
+      "chunk2_id": 26,
+      "similarity": 0.5163892073823746,
+      "same_cluster": true
+    }
+  ]
+}
