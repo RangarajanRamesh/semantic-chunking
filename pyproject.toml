@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "semantic-chunker"
+name = "advanced-chunker"
 version = "0.1.1"
 description = "Semantic-aware chunking and clustering for LLM and RAG pipelines."
 authors = [
