@@ -138,6 +138,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+chunkenv/
 
 # Spyder project settings
 .spyderproject
