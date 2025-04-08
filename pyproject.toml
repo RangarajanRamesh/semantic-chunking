@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-chunker"
+version = "0.1.1"
+description = "Semantic-aware chunking and clustering for LLM and RAG pipelines."
+authors = [
+  { name = "Rango Ramesh", email = "rango@celestials.ai" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+  "sentence-transformers>=2.2.2",
+  "scikit-learn",
+  "matplotlib",
+  "networkx",
+  "langchain-core>=0.1.0",
+  "seaborn",
+  "langchain"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+  "build",
+  "twine"
+]
+
+[project.urls]
+Source = "https://github.com/rango-ramesh/semantic-chunking/"
+
+[project.scripts]
+chunker = "semantic_chunker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["semantic_chunker*"]
