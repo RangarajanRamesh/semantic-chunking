@@ -1,30 +1,30 @@
-# semantic_chunker/visualization.py
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import networkx as nx
 from pathlib import Path
+from typing import List, Optional
 
-def plot_attention_matrix(attention_matrix, clusters=None, title="Attention Matrix", output_path=None):
+
+def plot_attention_matrix(attention_matrix: np.ndarray, clusters: Optional[List[int]] = None, title: str = "Attention Matrix", output_path: Optional[str] = None):
     if attention_matrix.size <= 1:
         print("Not enough data to visualize attention matrix")
         return
 
-    reordered_matrix = attention_matrix
     if clusters is not None:
         sorted_indices = np.argsort(clusters)
-        reordered_matrix = attention_matrix[sorted_indices][:, sorted_indices]
+        attention_matrix = attention_matrix[sorted_indices][:, sorted_indices]
+        clusters = [clusters[i] for i in sorted_indices]
 
     plt.figure(figsize=(12, 10))
-    ax = sns.heatmap(reordered_matrix, cmap="viridis")
+    ax = sns.heatmap(attention_matrix, cmap="viridis")
 
     if clusters is not None:
-        sorted_clusters = [clusters[i] for i in sorted_indices]
         boundaries = [0]
-        for i in range(1, len(sorted_clusters)):
-            if sorted_clusters[i] != sorted_clusters[i - 1]:
+        for i in range(1, len(clusters)):
+            if clusters[i] != clusters[i - 1]:
                 boundaries.append(i)
-        boundaries.append(len(sorted_clusters))
+        boundaries.append(len(clusters))
 
         for b in boundaries:
             plt.axhline(b, color='red', linewidth=1)
@@ -41,7 +41,11 @@ def plot_attention_matrix(attention_matrix, clusters=None, title="Attention Matr
         plt.show()
 
 
-def plot_semantic_graph(chunks, pairs, clusters, output_path=None):
+def plot_semantic_graph(chunks: List[dict], pairs: Optional[List[tuple]], clusters: List[int], output_path: Optional[str] = None):
+    if not pairs:
+        print("[Info] No semantic pairs available to plot.")
+        return
+
     G = nx.Graph()
 
     for i, chunk in enumerate(chunks):
@@ -70,7 +74,7 @@ def plot_semantic_graph(chunks, pairs, clusters, output_path=None):
         plt.show()
 
 
-def preview_clusters(chunks, clusters, output_path=None, max_per_cluster=3):
+def preview_clusters(chunks: List[dict], clusters: List[int], output_path: Optional[str] = None, max_per_cluster: int = 3):
     cluster_map = {}
     for i, cluster_id in enumerate(clusters):
         cluster_map.setdefault(cluster_id, []).append(i)

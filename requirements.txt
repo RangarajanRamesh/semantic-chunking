@@ -1,45 +1,15 @@
-certifi==2025.1.31
-charset-normalizer==3.4.1
-click==8.1.8
-contourpy==1.3.1
-cycler==0.12.1
-filelock==3.18.0
-fonttools==4.57.0
-fsspec==2025.3.2
-huggingface-hub==0.13.4
-idna==3.10
-Jinja2==3.1.6
-joblib==1.4.2
-kiwisolver==1.4.8
-MarkupSafe==3.0.2
-matplotlib==3.10.1
-mpmath==1.3.0
-networkx==3.4.2
-nltk==3.9.1
-numpy==1.24.4
-packaging==24.2
-pandas==2.2.3
-pillow==11.1.0
-pyparsing==3.2.3
-python-dateutil==2.9.0.post0
-pytz==2025.2
-PyYAML==6.0.2
-regex==2024.11.6
-requests==2.32.3
-safetensors==0.5.3
-scikit-learn==1.6.1
-scipy==1.15.2
-seaborn==0.13.2
-sentence-transformers==2.2.2
-sentencepiece==0.2.0
-six==1.17.0
-sympy==1.13.3
-threadpoolctl==3.6.0
-tokenizers==0.13.3
-torch==2.0.1
-torchvision==0.15.2
-tqdm==4.67.1
-transformers==4.30.2
-typing_extensions==4.13.1
-tzdata==2025.2
-urllib3==2.3.0
+sentence-transformers>=2.2.2
+scikit-learn>=1.1
+numpy>=1.24
+matplotlib>=3.5
+networkx>=3.0
+torch>=2.0.0
+langchain-core>=0.1.0
+click>=8.0
+pytest>=8.0
+
+# Optional:
+# seaborn>=0.13
+# transformers>=4.30
+# tokenizers>=0.13
+# pandas>=2.0

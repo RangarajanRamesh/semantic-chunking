@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-myenv/
+chunkenv/
 .DS_Store
 
 # C extensions

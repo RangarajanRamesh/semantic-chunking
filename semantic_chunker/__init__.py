@@ -1,2 +1,2 @@
-from .core import ChunkAnalyzer
+from .core import SemanticChunker
 from . import visualization

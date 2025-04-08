@@ -1,13 +1,30 @@
-# semantic_chunker/core.py
 import numpy as np
+import torch
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from typing import List, Dict, Any
+from collections import defaultdict
 
-class ChunkAnalyzer:
-    def __init__(self, model_name='all-MiniLM-L6-v2', max_tokens=512):
-        self.model = SentenceTransformer(model_name)
+
+class SemanticChunker:
+    def __init__(
+        self,
+        model_name='all-MiniLM-L6-v2',
+        max_tokens=512,
+        cluster_threshold=0.5,
+        similarity_threshold=0.4
+    ):
+        self.device = (
+            "cuda" if torch.cuda.is_available() else
+            "mps" if torch.backends.mps.is_available() else
+            "cpu"
+        )
+        print(f"[Info] Using device: {self.device}")
+        self.model = SentenceTransformer(model_name, device=self.device)
         self.max_tokens = max_tokens
+        self.cluster_threshold = cluster_threshold
+        self.similarity_threshold = similarity_threshold
+        self.tokenizer = self.model.tokenizer if hasattr(self.model, "tokenizer") else None
 
     def get_embeddings(self, chunks: List[Dict[str, Any]]):
         if not chunks:
@@ -15,13 +32,13 @@ class ChunkAnalyzer:
         texts = [chunk["text"] for chunk in chunks]
         return np.array(self.model.encode(texts, show_progress_bar=False))
 
-    def compute_attention_matrix(self, embeddings):
+    def compute_similarity(self, embeddings):
         if embeddings.size == 0:
             return np.array([[]])
         return cosine_similarity(embeddings)
 
-    def find_chunk_clusters(self, attention_matrix, threshold=0.5):
-        n = attention_matrix.shape[0]
+    def cluster_chunks(self, similarity_matrix, threshold=0.5):
+        n = similarity_matrix.shape[0]
         parent = list(range(n))
 
         def find(x):
@@ -34,44 +51,33 @@ class ChunkAnalyzer:
             parent[find(x)] = find(y)
 
         for i in range(n):
-            for j in range(i+1, n):
-                if attention_matrix[i, j] >= threshold:
+            for j in range(i + 1, n):
+                if similarity_matrix[i, j] >= threshold:
                     union(i, j)
 
         clusters = [find(i) for i in range(n)]
         cluster_map = {cid: idx for idx, cid in enumerate(sorted(set(clusters)))}
         return [cluster_map[c] for c in clusters]
 
-    def find_top_semantic_pairs(self, attention_matrix, min_similarity=0.4, top_k=50):
-        pairs = []
-        n = attention_matrix.shape[0]
-        for i in range(n):
-            for j in range(i + 1, n):
-                sim = attention_matrix[i, j]
-                if sim >= min_similarity:
-                    pairs.append((i, j, sim))
-        pairs.sort(key=lambda x: x[2], reverse=True)
-        return pairs[:top_k]
-
-    def merge_clusters(self, chunks: List[Dict[str, Any]], clusters: List[int], tokenizer=None):
-        from collections import defaultdict
+    def merge_chunks(self, chunks: List[Dict[str, Any]], clusters: List[int]) -> List[Dict[str, Any]]:
+        if not chunks or not clusters:
+            return []
 
         cluster_map = defaultdict(list)
         for idx, cluster_id in enumerate(clusters):
             cluster_map[cluster_id].append(chunks[idx])
 
         merged_chunks = []
-        for cluster_id, chunk_list in cluster_map.items():
+        for chunk_list in cluster_map.values():
             current_text = ""
             current_meta = []
 
             for chunk in chunk_list:
                 next_text = (current_text + " " + chunk["text"]).strip()
-
-                if tokenizer:
-                    num_tokens = len(tokenizer.tokenize(next_text))
+                if self.tokenizer:
+                    num_tokens = len(self.tokenizer.encode(next_text))
                 else:
-                    num_tokens = len(next_text.split())  # fallback: word count proxy
+                    num_tokens = len(next_text.split())
 
                 if num_tokens > self.max_tokens and current_text:
                     merged_chunks.append({
@@ -92,18 +98,36 @@ class ChunkAnalyzer:
 
         return merged_chunks
 
-    def analyze_chunks(self, chunks: List[Dict[str, Any]], cluster_threshold=0.5, similarity_threshold=0.4):
+    def find_top_semantic_pairs(self, similarity_matrix, min_similarity=0.4, top_k=50):
+        pairs = []
+        n = similarity_matrix.shape[0]
+        for i in range(n):
+            for j in range(i + 1, n):
+                sim = similarity_matrix[i, j]
+                if sim >= min_similarity:
+                    pairs.append((i, j, sim))
+        pairs.sort(key=lambda x: x[2], reverse=True)
+        return pairs[:top_k]
+
+    def chunk(self, chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         embeddings = self.get_embeddings(chunks)
-        attention = self.compute_attention_matrix(embeddings)
-        clusters = self.find_chunk_clusters(attention, threshold=cluster_threshold)
-        semantic_pairs = self.find_top_semantic_pairs(attention, min_similarity=similarity_threshold)
-        merged = self.merge_clusters(chunks, clusters)
+        similarity_matrix = self.compute_similarity(embeddings)
+        clusters = self.cluster_chunks(similarity_matrix, threshold=self.cluster_threshold)
+        return self.merge_chunks(chunks, clusters)
+
+    def get_debug_info(self, chunks: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Optional: for visualization or export/debug purposes."""
+        embeddings = self.get_embeddings(chunks)
+        similarity_matrix = self.compute_similarity(embeddings)
+        clusters = self.cluster_chunks(similarity_matrix, threshold=self.cluster_threshold)
+        merged_chunks = self.merge_chunks(chunks, clusters)
+        semantic_pairs = self.find_top_semantic_pairs(similarity_matrix, min_similarity=self.similarity_threshold)
 
         return {
             "original_chunks": chunks,
             "embeddings": embeddings,
-            "attention_matrix": attention,
+            "similarity_matrix": similarity_matrix,
             "clusters": clusters,
             "semantic_pairs": semantic_pairs,
-            "merged_chunks": merged,
+            "merged_chunks": merged_chunks
         }

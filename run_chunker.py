@@ -1,4 +1,4 @@
-from semantic_chunker.core import ChunkAnalyzer
+from semantic_chunker.core import SemanticChunker
 from semantic_chunker.visualization import plot_attention_matrix, plot_semantic_graph, preview_clusters
 
 # Example input — either raw strings or dicts with "text"
@@ -10,31 +10,33 @@ raw_chunks = [
     "Plants convert sunlight into energy.",
 ]
 
-# Optional: wrap raw strings into {"text": ...} if needed
+# Wrap raw strings into {"text": ...} if needed
 chunks = [{"text": c} if isinstance(c, str) else c for c in raw_chunks]
 
-# Run the analysis
-analyzer = ChunkAnalyzer(max_tokens=100)
-results = analyzer.analyze_chunks(chunks, cluster_threshold=0.4, similarity_threshold=0.4)
+# Initialize the semantic chunker
+chunker = SemanticChunker(max_tokens=100, cluster_threshold=0.4, similarity_threshold=0.4)
+
+# Get debug info (includes similarity matrix, clusters, etc.)
+debug_info = chunker.get_debug_info(chunks)
 
 # Show original cluster preview
-preview_clusters(results["original_chunks"], results["clusters"])
+preview_clusters(debug_info["original_chunks"], debug_info["clusters"])
 
-# Optional: show visualizations
-plot_attention_matrix(results["attention_matrix"], results["clusters"], title="Similarity Matrix")
-plot_semantic_graph(results["original_chunks"], results["semantic_pairs"], results["clusters"])
+# Show visualizations
+plot_attention_matrix(debug_info["similarity_matrix"], debug_info["clusters"], title="Similarity Matrix")
+plot_semantic_graph(debug_info["original_chunks"], debug_info["semantic_pairs"], debug_info["clusters"])
 
 # Print top semantic relationships
 print("\n🔗 Top Semantic Relationships:")
-for i, j, sim in results["semantic_pairs"]:
+for i, j, sim in debug_info["semantic_pairs"]:
     print(f"Chunk {i} ↔ Chunk {j} | Sim: {sim:.3f}")
-    print(f"  - {results['original_chunks'][i]['text']}")
-    print(f"  - {results['original_chunks'][j]['text']}")
+    print(f"  - {debug_info['original_chunks'][i]['text']}")
+    print(f"  - {debug_info['original_chunks'][j]['text']}")
     print()
 
 # Print merged chunks
 print("\n📦 Merged Chunks:")
-for i, merged in enumerate(results["merged_chunks"]):
+for i, merged in enumerate(debug_info["merged_chunks"]):
     print(f"\nMerged Chunk {i + 1}")
     print(f"Text: {merged['text'][:100]}...")
     print(f"Metadata: {merged['metadata']}")
