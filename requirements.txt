@@ -8,8 +8,14 @@ langchain-core>=0.1.0
 click>=8.0
 pytest>=8.0
 
-# Optional:
-# seaborn>=0.13
-# transformers>=4.30
-# tokenizers>=0.13
-# pandas>=2.0
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+  "build",
+  "twine",
+  "seaborn",
+  "langchain"
+]
+
+

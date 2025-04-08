@@ -34,7 +34,7 @@ class SemanticChunker:
 
     def compute_similarity(self, embeddings):
         if embeddings.size == 0:
-            return np.array([[]])
+            return np.zeros((0, 0))
         return cosine_similarity(embeddings)
 
     def cluster_chunks(self, similarity_matrix, threshold=0.5):

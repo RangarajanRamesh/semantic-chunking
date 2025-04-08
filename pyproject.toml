@@ -7,7 +7,7 @@ name = "semantic-chunker"
 version = "0.1.0"
 description = "Semantic-aware chunking and clustering for LLM and RAG pipelines."
 authors = [
-  { name = "Rango Ramesh", email = "rango [at] celestials.ai" }
+  { name = "Rango Ramesh", email = "rango@celestials.ai" }
 ]
 readme = "README.md"
 requires-python = ">=3.8"
@@ -30,12 +30,14 @@ dev = [
   "pytest",
   "ruff",
   "build",
-  "twine"
+  "twine",
+  "seaborn",
+  "langchain"
 ]
 
 [project.urls]
-Homepage = "https://celestials.ai/"
-Source = "https://github.com/yourusername/semantic-chunker"
+Homepage = "https://rangarajanramesh.com/"
+Source = "https://github.com/RangarajanRamesh/semantic-chunking/"
 
 [project.scripts]
 chunker = "semantic_chunker.cli:main"
