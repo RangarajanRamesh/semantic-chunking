@@ -73,9 +73,6 @@ cover/
 docs/_build/
 site/
 
-# CI/CD
-/.github/workflows/
-
 # Lock files (optional)
 Pipfile.lock
 poetry.lock
