@@ -1,4 +1,3 @@
-import pytest
 from semantic_chunker.core import SemanticChunker
 
 def test_semantic_chunker_success():

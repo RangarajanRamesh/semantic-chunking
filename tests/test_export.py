@@ -1,5 +1,4 @@
 # tests/test_export.py
-import os
 import json
 import csv
 from pathlib import Path

@@ -1,5 +1,5 @@
 from langchain_core.documents import Document
-from integrations.langchain import SemanticChunkerSplitter
+from semantic_chunker.integrations.langchain import SemanticChunkerSplitter
 
 def test_langchain_chunker_split():
     documents = [
