@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "advanced-chunker"
-version = "0.1.3"
+version = "0.1.4"
 description = "Semantic-aware chunking and clustering for LLM and RAG pipelines."
 authors = [
   { name = "Rango Ramesh", email = "rango@celestials.ai" }

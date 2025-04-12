@@ -47,7 +47,21 @@ for i, merged in enumerate(merged_chunks):
     print(f"Chunk {i}:")
     print(merged["text"])
     print()
+
+# Response
+
+Merged Chunk 1
+Text: Artificial intelligence is a growing field. Machine learning is a subset of AI. Deep learning uses n...
+Metadata: [{'text': 'Artificial intelligence is a growing field.'}, {'text': 'Machine learning is a subset of AI.'}, {'text': 'Deep learning uses neural networks.'}]
+
+Merged Chunk 2
+Text: Photosynthesis occurs in plants. Plants convert sunlight into energy....
+Metadata: [{'text': 'Photosynthesis occurs in plants.'}, {'text': 'Plants convert sunlight into energy.'}]
+
 ```
+<img src="Images/similarity_matrix.png" alt="Similarity Matrix" width="400"/>
+
+<img src="Images/relationships.png" alt="Relationships" width="400"/>
 
 ---
 
